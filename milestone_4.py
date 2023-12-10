@@ -3,8 +3,8 @@ import random
 #Create a list containing the names of your 5 favorite fruits.
 word_list = ["apple", "banana", "pear", "grapes", "cherry"]
 
-#random method to select from list
-#random_fruit_from_list = random.choice(word_list_of_fruits)
+#_ to protect variable
+#__ to make variable private
 
 
 #create hangman class wiht two parameters
@@ -22,9 +22,9 @@ class Hangman:
     #get and check user input
     def ask_for_input(self):
         while True:
-            #user input
+            #obtain guess of letter from user
             guess = input(str("Guess a single letter :"))
-            #checks
+            #print error is charecter is not an alphabet nor a single charecter
             if not guess.isalpha() or len(guess) != 1:
                 print("Invalid letter. Please, enter a single alphabetical charecter.")
             
@@ -32,7 +32,7 @@ class Hangman:
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")       
                 
-            ##if guess is not a single alphabetical letter
+            # when carecter is from the alphabet and in single
             else:
                 #call check guess method
                 self.check_guess(guess)
@@ -45,6 +45,7 @@ class Hangman:
         #ensure letter is in lowercase
         letter_in_lowercase = guess.lower()
         
+        #check charecter appears in the randomly selected word from the list
         if letter_in_lowercase in self.word:
             print(f"Good guess! {guess} is in the word.")
 
@@ -55,9 +56,12 @@ class Hangman:
                     #In the if block, replace the corresponding "_" in the word_guessed with the guess
                     self.word_guessed[i] = guess
 
-            # Step 2: Outside the for-loop, reduce the variable num_letters by 1
+            # Outside the for-loop, reduce the variable num_letters by 1
             self.num_letters = self.num_letters - 1
-            print(self.word_guessed, self.list_of_guesses)
+            
+            # line for checking code commented out.
+            # print(self.word_guessed, self.list_of_guesses)
+        
         else: 
             self.num_lives = self.num_lives - 1
             print(f"Sorry, {guess} is not in the word.")
