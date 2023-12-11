@@ -34,11 +34,11 @@ class Hangman:
                 
             # when carecter is from the alphabet and in single
             else:
+                #Append the guess to the list_of_guesses ##moved up 
+                self.list_of_guesses.append(guess)
+
                 #call check guess method
                 self.check_guess(guess)
-            
-                #Append the guess to the list_of_guesses
-                self.list_of_guesses.append(guess)
 
     #check if letter is in random word from word list
     def check_guess(self, guess): 
@@ -76,16 +76,19 @@ def play_game(word_list):
 
     #body of loop checking humber of lives, numer and letters
     while True:
+        #test code to keep track of numbers for test purposes
+        print(f"number of lives: {game.num_lives}, number of letters: {game.num_letters}")
         if game.num_lives == 0:
             print("You lost!")
             #test code results on the fly
-            print(game.num_lives)
+            #print(game.num_lives) ##now moved up
+            break
         elif game.num_letters > 0:
-            game.ask_for_input()
             #test code results on the fly
-            print(game.num_letters)
-        
+            #print(game.num_letters)  ##now moved up
+            game.ask_for_input()
         else:
             print("Congratulations. You won the game!")
+            break
 
 play_game(word_list)
