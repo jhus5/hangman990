@@ -3,9 +3,13 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
+In this variation of the hangmen project 5 fruits have been selected and the player needs to guess what the fruit selected by random from the list is. Player has 5 lives/tries. 
+
+##iterations 
 For milestone 1 and 2. This is a version of the game that takes in a list of five fruits and asks the user to guess a letter that may appear in the word selected at random from the list of fruits.
 
-Milestone 3 and 4 focussed on adding functions and classes respectively.  
+Milestone 3 and 4 focussed on adding functions and classes respectively.
+Milestone 5 intriduced a class and play_game function to run the game. 
 
 
 # Table of Contents
