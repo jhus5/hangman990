@@ -14,15 +14,15 @@ The project is a simple implementation of the Hangman game using Python. The aim
 ## Installation
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/hangman-game.git
+git clone https://github.com/jhus5/hangman990/milestone_5.git
 '''
 2. Navigate to the project directory:
 '''bash
-cd hangman-game
+cd hangman
 '''
 3. Run the script:
 '''bash
-python hangman_game.py
+python milestone_5.py
 
 #Usage
 1.  Launch the game script using the installation instructions.
