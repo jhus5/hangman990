@@ -1,23 +1,36 @@
-# Hangman
-Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
+# Project Title
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [License](#license)
 
-In this variation of the hangmen project 5 fruits have been selected and the player needs to guess what the fruit selected by random from the list is. Player has 5 lives/tries. 
+## Description
 
-##iterations 
-For milestone 1 and 2. This is a version of the game that takes in a list of five fruits and asks the user to guess a letter that may appear in the word selected at random from the list of fruits.
+The project is a simple implementation of the Hangman game using Python. The aim is to provide a text-based Hangman game where users can guess letters to reveal a hidden word. This project serves as a learning exercise to practice object-oriented programming in Python and enhance skills in handling user input, random word selection, and basic game logic.
 
-Milestone 3 and 4 focussed on adding functions and classes respectively.
-Milestone 5 intriduced a class and play_game function to run the game. 
+## Installation
+1. Clone the repository to your local machine:
+```bash
+git clone https://github.com/your-username/hangman-game.git
+'''
+2. Navigate to the project directory:
+'''bash
+cd hangman-game
+'''
+3. Run the script:
+'''bash
+python hangman_game.py
 
+#Usage
+1.  Launch the game script using the installation instructions.
+2.  Follow the on-screen prompts to guess letters and play the game.
+3.  The game will provide feedback on correct and incorrect guesses.
+4.  Win the game by correctly guessing all letters or lose by running out of lives.
 
-# Table of Contents
+#File struture
 
-#Installation instructions
-
-#Usage instructions
-
-#File structure of the project
-
-#License information
+#License
+This project is licensed under the MIT license. 
