@@ -79,12 +79,12 @@ def play_game(word_list):
     while True:
         #test code to keep track of numbers for test purposes
         print(f"number of lives: {game.num_lives}, number of letters: {game.num_letters}")
-        if game.num_lives == 0 or game.num_letters == 0:
+        if game.num_lives == 0:
             print("You lost!")
             #test code results on the fly
             #print(game.num_lives) ##now moved up
             break
-        elif game.num_letters > 0:
+        elif game.num_letters > 0 or game.num_letters > 0:
             #test code results on the fly
             #print(game.num_letters)  ##now moved up
             game.ask_for_input()
